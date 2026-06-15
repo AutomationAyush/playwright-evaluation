@@ -1,0 +1,15 @@
+{
+  "name": "playwright-evaluation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "regression": "npx playwright test",
+    "smoke": "npx playwright test --grep @smoke",
+    "report": "npx playwright show-report",
+    "test": "npm run regression"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "typescript": "^5.5.4"
+  }
+}
